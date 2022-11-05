@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Demo Contract Test
+  version: 0.0.1
+  description: Test Contract Schema
+  contact:
+    name: Abhishek Singh
+paths:
+  /health-check:
+    get:
+      summary: Fetch User Profile
+      description: Get the data relating to one planet
+      x-controller: test
+      responses:
+        '200':
+          description: User profile object
+          # content:
+          #   application/json:
+          #     schema:
+          #       type: object
+          #       properties:
+          #         name:
+          #           type: string
+          #           description: Name of User
+          #           example: "Abhi"
+          #         email:
+          #           type: string 
+          #           description: emailId of user
+          #           example: test@user.com
+          #         phone:
+          #           type: number
+          #           description: Users phone number
+          #           example: 1234567897

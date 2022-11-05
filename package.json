@@ -1,0 +1,20 @@
+{
+  "name": "credit-card-processing",
+  "version": "1.0.0",
+  "description": "crud operation for creditcards",
+  "main": "index.js",
+  "repository": "https://github.com/Abhiintheweb/credit-card-processing.git",
+  "author": "abhiintheweb <abhiintheweb@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa2-swagger-ui": "^5.6.0",
+    "nodemon": "^2.0.20",
+    "yamljs": "^0.3.0"
+  }
+}
