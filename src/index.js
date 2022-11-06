@@ -6,7 +6,7 @@ const router = require('./contracts/routes');
 
 const app = new Koa();
 app.use(bodyParser())
-app.use(router.routes());
+app.use(router.routes(app));
 
 const port = 3000;
 app.listen(port,()=>{
