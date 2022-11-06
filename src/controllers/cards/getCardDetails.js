@@ -4,10 +4,10 @@ const getAllCards = async(ctx)=>{
 
     try {
         const cardDetails = await getCardDetails()
-        ctx.body = cardDetails;
+        ctx.body = {data:cardDetails};
         ctx.status = 200;
     } catch (error) {
-        ctx.body = {'message': error.message};
+        ctx.body = {message: error.message};
         ctx.status = 400;
     }
 

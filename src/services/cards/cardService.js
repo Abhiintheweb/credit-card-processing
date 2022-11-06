@@ -11,14 +11,26 @@ const getCardDetails = async () => {
 
 const addCardDetails = async(ctx) =>{
 
-    const {cardNumber} = ctx.request.body;
+    const {cardNumber, name, limit} = ctx.request.body;
+
+    if(!name){
+        throw new Error('Name is required.');
+    };
+    if (!limit){
+        throw new Error('Limit is required.');
+    }
+
     const cardIsValid = luhanCheck(cardNumber);
+    if(cardIsValid && card.get(cardNumber)){
+        throw new Error('Card is already registred.');
+    }
+
     if (cardIsValid){
-        card.set(cardNumber, ctx.request.body)
+        ctx.request.body.balance = 0;
+        card.set(cardNumber, ctx.request.body);
     }else{
         throw new Error('Invalid Card Number');
     }
-    console.log(card.get(cardNumber))
     return card.get(cardNumber);
 }
 
