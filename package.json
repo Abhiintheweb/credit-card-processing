@@ -16,15 +16,8 @@
     "express": "^4.18.2",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
-    "koa-oas3": "^2.5.0",
-    "koa-openapi-ui": "^0.1.0",
-    "koa-openapi-validator": "4.12.0-beta.5",
-    "koa2-swagger-ui": "^5.6.0",
     "node-cache": "^5.1.2",
-    "nodemon": "^2.0.20",
-    "swagger2": "^4.0.2",
-    "swagger2-koa": "^4.0.0",
-    "yamljs": "^0.3.0"
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "jest": "^29.2.2"
