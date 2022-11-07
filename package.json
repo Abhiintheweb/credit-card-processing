@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@koa/router": "^12.0.0",
+    "@shopify/jest-koa-mocks": "^5.0.1",
     "express": "^4.18.2",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",

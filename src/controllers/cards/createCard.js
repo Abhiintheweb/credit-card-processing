@@ -10,7 +10,6 @@ const addNewCardDetails = async(ctx)=>{
         ctx.body = {message: error.message};
         ctx.status = 400;
     }
-
    
 }
 
