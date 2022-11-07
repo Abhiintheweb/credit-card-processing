@@ -15,7 +15,7 @@ API Doc Link:  https://documenter.getpostman.com/view/14624187/2s8YYMmfh9
 - check if docker is running `docker ps`
 - to build : `docker compose build`
 - to run : `docker compose up`
-- you can access application running on 127.0.0.1:3000
+- you can access application running on `http://127.0.0.1:3000`
 
 
 
